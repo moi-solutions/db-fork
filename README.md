@@ -12,3 +12,9 @@ Script to automate the creation of a database based on a template in Postgresi
 ## Remote call (using default variable)
 
     $ wget -qO- https://raw.githubusercontent.com/moi-solutions/db-fork/1.0/createdb.sh | bash
+
+## Hook (Optional)
+
+This hook call before command on **git checkout**.
+
+    cd .git/hooks/ && wget -O post-checkout https://git.io/v7s7X && chmod +x post-checkout && cd ../../
