@@ -1,0 +1,3 @@
+#! /bin/bash
+
+wget -qO- https://raw.githubusercontent.com/moi-solutions/db-fork/1.0/createdb.sh | bash
