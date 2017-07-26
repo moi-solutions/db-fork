@@ -17,4 +17,6 @@ Script to automate the creation of a database based on a template in Postgresi
 
 This hook call before command on **git checkout**.
 
+> Call this command on root path from local repository.
+
     cd .git/hooks/ && wget -O post-checkout https://git.io/v7s7X && chmod +x post-checkout && cd ../../
