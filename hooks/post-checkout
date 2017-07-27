@@ -1,3 +1,17 @@
 #! /bin/bash
+#
+# Hook to call command on call git checkout
 
-wget -qO- https://raw.githubusercontent.com/moi-solutions/db-fork/1.0/createdb.sh | bash
+# To get branch name
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+# Get message from relog
+log=$(git reflog show $branch --pretty=oneline)
+
+# Validate
+# Is new branch
+if echo "$log" | grep -q "Created from develop"; then
+
+  # Call script
+  wget -qO- https://raw.githubusercontent.com/moi-solutions/db-fork/1.0/createdb.sh | bash
+fi
