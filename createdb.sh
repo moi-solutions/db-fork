@@ -26,7 +26,7 @@ database_prefix="gandalf-dev_"
 
 if [[ $branch =~ .*hotfix* ]]
 then
-   database="${$database_prefix}hotfix"
+   database="${database_prefix}hotfix"
 else
    database="${database_prefix}${branch}"
 fi
