@@ -13,7 +13,7 @@ Script to automate the creation of a database based on a template in Postgres.
 
 ## Remote call (using default variable)
 
-    $ wget -qO- https://raw.githubusercontent.com/moi-solutions/db-fork/1.0/createdb.sh | bash
+    $ wget -qO- https://raw.githubusercontent.com/moi-solutions/db-fork/1.1/createdb.sh | bash
 
 ## Hook (Optional)
 
