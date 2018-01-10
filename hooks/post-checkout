@@ -13,5 +13,5 @@ log=$(git reflog show $branch --pretty=oneline)
 if echo "$log" | grep -q "Created from develop"; then
 
   # Call script
-  wget -qO- https://raw.githubusercontent.com/moi-solutions/db-fork/1.0/createdb.sh | bash
+  wget -qO- https://raw.githubusercontent.com/moi-solutions/db-fork/1.1/createdb.sh | bash
 fi
